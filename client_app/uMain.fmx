@@ -1,0 +1,66 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'SSDP Find'
+  ClientHeight = 437
+  ClientWidth = 304
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object rectMain: TRectangle
+    Align = Contents
+    Fill.Kind = None
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Size.Width = 284.000000000000000000
+    Size.Height = 417.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object cbInterfaces: TComboBox
+      Align = Top
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 8.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 8.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 264.000000000000000000
+      Size.Height = 35.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      OnChange = cbInterfacesChange
+    end
+    object btnFind: TSpeedButton
+      Align = Top
+      Margins.Left = 30.000000000000000000
+      Margins.Right = 30.000000000000000000
+      Position.X = 30.000000000000000000
+      Position.Y = 51.000000000000000000
+      Size.Width = 224.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'playtoolbutton'
+      Text = 'btnFind'
+      OnClick = btnFindClick
+    end
+    object lstResult: TListBox
+      Align = Client
+      Margins.Top = 8.000000000000000000
+      Size.Width = 284.000000000000000000
+      Size.Height = 308.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      DisableFocusEffect = True
+      DefaultItemStyles.ItemStyle = 'listboxitemstyle'
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      Viewport.Width = 280.000000000000000000
+      Viewport.Height = 304.000000000000000000
+    end
+  end
+end

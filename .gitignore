@@ -1,0 +1,7 @@
+/bin
+/out
+/ssdpserver_node/package-lock.json
+/ssdpserver_node/node_modules
+/client_app/SSDPClient.dproj.local
+/client_app/SSDPClient.identcache
+/client_app/SSDPClient.res
